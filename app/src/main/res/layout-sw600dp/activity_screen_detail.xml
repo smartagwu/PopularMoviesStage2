@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/constraint_background"
+    tools:context=".DetailScreenActivity"
+    android:layout_marginBottom="50dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="654dp"
+        android:layout_height="282dp"
+        android:id="@+id/movieposter"
+        android:layout_gravity="center|start"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/git"
+        tools:layout_editor_absoluteX="-28dp" />
+
+    <TextView
+        android:layout_width="344dp"
+        android:layout_height="62dp"
+        android:id="@+id/title1"
+        android:textSize="25dp"
+        android:gravity="center"
+        tools:text="Smart Agwu Elezuo"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/movieposter"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/movieposter"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <View
+        android:layout_width="96dp"
+        android:layout_height="23dp"
+        android:background="@color/colorPrimaryLight"
+        android:id="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/title1"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/view3"
+        android:layout_marginLeft="124dp" />
+
+        <ImageView
+            android:layout_width="122dp"
+            android:layout_height="58dp"
+            android:src="@mipmap/like"
+            android:onClick="onClickFavourite"
+            android:id="@+id/view2"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="@+id/title1"
+            android:layout_marginTop="47dp"
+            app:layout_constraintLeft_toRightOf="@+id/title1"
+            android:layout_marginLeft="0dp" />
+
+        <View
+            android:layout_width="93dp"
+            android:layout_height="23dp"
+            android:background="@color/colorPrimaryLight"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/textView1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/overview_view"
+            android:layout_marginRight="8dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:drawableLeft="@mipmap/star"
+        tools:text="5.7/10"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="15dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/date"
+        android:textStyle="bold"
+        tools:text="7-03-2017"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:layout_marginLeft="19dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.527" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        android:layout_marginEnd="8dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/view4"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <View
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:id="@+id/overview_view"
+        android:background="@color/colorPrimaryLight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintTop_toBottomOf="@+id/rating"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/plot" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Overview"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/overview_view"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/overview_view"
+        app:layout_constraintTop_toTopOf="@+id/overview_view"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/plot"
+        android:textSize="15dp"
+        tools:text="The plot"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintHorizontal_bias="0.027"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/view2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/plot"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/view4"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        android:id="@+id/view5" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:src="@mipmap/youtube"
+        android:onClick="watchTriller"
+        android:id="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="61dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:src="@mipmap/review"
+        android:tint="@color/tint_color"
+        android:id="@+id/imageView"
+        android:onClick="viewReview"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv9"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/tv9"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv9"
+        app:layout_constraintHorizontal_bias="0.464" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv9"
+        android:onClick="watchTriller"
+        android:text="Watch Triller Now!"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginRight="38dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv10"
+        android:text="See Reviews"
+        android:textSize="15dp"
+        android:onClick="viewReview"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginRight="57dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

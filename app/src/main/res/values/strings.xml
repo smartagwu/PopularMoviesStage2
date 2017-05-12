@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="show_favourite_label">Favourite Collection</string>
+    <string name="show_popular_movies_label">Popular Movies</string>
+    <string name="Show_top_rated_movies_label">Top Rated Movies</string>
+
+    <string name="show_favourite_value">favourite_collection</string>
+    <string name="show_popular_movies_value">popular_movies</string>
+    <string name="Show_top_rated_movies_value">top_rated_movies</string>
+
+    <string name="list_preference_key">list_preference</string>
+
+    <string name="notification_title" translatable="true">You added a movie as Favourite</string>
+    <string name="notification_text" translatable="true">A movie has been added as favourite to your collection!</string>
+    <string name="close_notification" translatable="true">Colse</string>
+    <string name="open_favourite" translatable="true">View Favourite!</string>
+</resources>

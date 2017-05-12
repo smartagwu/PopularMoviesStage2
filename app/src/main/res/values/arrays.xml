@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array  name="list_preference_entries_label">
+        <item>@string/show_popular_movies_label</item>
+        <item>@string/Show_top_rated_movies_label</item>
+        <item>@string/show_favourite_label</item>
+    </array>
+
+    <array name="list_preference_entries_value">
+        <item>@string/show_popular_movies_value</item>
+        <item>@string/Show_top_rated_movies_value</item>
+        <item>@string/show_favourite_value</item>
+    </array>
+</resources>
